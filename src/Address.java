@@ -23,7 +23,7 @@ public class Address {
 
     @Override
     public String toString(){
-        return "city: "+city+", type: "+type+", name: "+name+", number: "+number;
+        return "(city: "+city+", type: "+type+", name: "+name+", number: "+number+")";
     }
 
 }

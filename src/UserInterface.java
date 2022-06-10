@@ -11,6 +11,8 @@ public class UserInterface {
     }
 
     public void newMonth() {
+        pM.cleanMarket();
+        pM.startMarket();
         startMonth();
         calculateMonth();
     }

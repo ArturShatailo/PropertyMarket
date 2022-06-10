@@ -67,4 +67,10 @@ public class PropertyMarket implements Market, MarketConstants{
     public void sellLot(int p) {
         lots.remove(p);
     }
+
+    public void cleanMarket() {
+        while(Tech.getRandom(0, (lots.size()-1)) > 0){
+            lots.remove(Tech.getRandom(0, (lots.size()-1)));
+        }
+    }
 }

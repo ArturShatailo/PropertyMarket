@@ -9,8 +9,6 @@ public class Main{
         System.out.println("Input your name");
         Proprietor proprietor = new Proprietor(Tech.GetInputStringFunction(), 90, 500000.0);
 
-        propertyMarket.startMarket();
-
         //User interface (menus) starting in the UI object methods
         UserInterface UI = new UserInterface(propertyMarket, proprietor);
         UI.newMonth();
